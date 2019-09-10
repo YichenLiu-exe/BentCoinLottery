@@ -1,5 +1,6 @@
 #
 # Author: Graham Smith
+# Last Edited: Yichen Liu 
 #
 # A simulation of a lottery based on flipping a bent coin 10 times
 #
@@ -49,7 +50,7 @@ generate_ticket <- function(yourNumber) {
     for (i in 1:30) {
       if (substr(yourNumber, i, i) != "0" &
           substr(yourNumber, i, i) != "1") {
-        return("WE WANT 0S AND 1S DUMMY!TRY AGAIN")
+        return("WE WANT 0 AND 1 DUMMY!TRY AGAIN")
       }
     }
     return(yourNumber)
